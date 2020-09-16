@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAG TO MATCH LEVEL 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module"></script>
+
+</head>
+
+<body>
+    <h1>DRAG TO MATCH</h1>
+    <hr>
+    <div class="details">
+        <h3 id="score">SCORE:</h3>
+        <h3 id="timer">TIMER:</h3>
+    </div>
+    <div class="main">
+        <section class="draggable-elements">
+            <img class="india draggable" draggable="true" src="./assets/india.png" id="india">
+            <img class="australia draggable" draggable="true" src="./assets/australia.png" id="australia">
+            <img class="america draggable" draggable="true" src="./assets/america.png" id="australia">
+            <img class="japan draggable" draggable="true" src="./assets/japan.png" id="australia">
+            <img class="canada draggable" draggable="true" src="./assets/canada.jpg" id="australia">
+        </section>
+
+        <section class="droppable-elements">
+            <div class="droppable" data-draggable-id="australia"><span>Australia</span></div>
+            <div class="droppable" data-draggable-id="india"><span>India</span></div>
+            <div class="droppable" data-draggable-id="canada"><span>Canada</span></div>
+            <div class="droppable" data-draggable-id="america"><span>America</span></div>
+            <div class="droppable" data-draggable-id="japan"><span>Japan</span></div>
+        </section>
+
+    </div>
+</body>
+
+</html>

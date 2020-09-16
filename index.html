@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAG TO MATCH</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 200px;
+            font-family: "Balsamiq Sans", cursive;
+            background-color: aquamarine;
+        }
+
+        p {
+            text-align: left;
+            margin-left: 400px;
+            line-height: 1em;
+        }
+
+        .button {
+            background-color: #3388e9;
+            margin: 30px 0 0 600px;
+            border-radius: 4px;
+            width: 100px;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 1.2em;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="name">DRAG TO MATCH</h1>
+    <p>RULES:</p>
+    <p>(1) THE TIMER STARTS AS SOON AS YOU PRESS THE BUTTON BELOW</p>
+    <p>(2) DRAG TO MATCH THE TEXT,IMAGES OR GIFS TO THE HINT IN THE BOX </p>
+    <p>(3) YOU CANNOT DRAG THE IMAGE AFTER ITS DROPPED IN THE BOX</p>
+    <br>
+    <h3>LET'S GOOO!!</h4>
+        <div class="button" id="start"> START </div>
+        <script>
+            const $startButton = document.getElementById("start");
+            $startButton.onclick = () => {
+                location.href = "level1.html";
+            };
+        </script>
+</body>
+
+</html>
